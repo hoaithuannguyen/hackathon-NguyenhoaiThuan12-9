@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập thực hành</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="h2">
+            <h2>Select Card</h2>
+        </div>
+        <div class="imgTotal">
+            <img src="./images/z4686191427089_6bfc4335bcd1f0e86739f8b90c469db4.jpg" alt="" id="img1" class="img">
+            <img src="./images/z4686189914123_a7af7613828c372cb7f55602accb33c7.jpg" alt="" id="img2" class="img">
+            <img src="./images/z4686188625643_9346ad1f69ea967deb1590bc86544b23.jpg" alt="" id="img3" class="img">
+            <img src="./images/z4686192886014_a7e0a6064ee07c4920431a5463a5a976.jpg" alt="" id="img4" class="img">
+            <img src="./images/z4686196688103_27cb41c85fdf411deaa3072deaf5f911.jpg" alt="" id="img5" class="img">
+
+        </div>
+        <div class="form">
+            <form action="">
+                <div class="div1">
+                    <label for="">Card Number</label>
+                    <input type="text" id="input1">
+                </div>
+                <div class="div2">
+                    <div>
+                        <label for="">Date</label>
+                        <input type="text" id="input2">
+                    </div>
+                    <div>
+                        <label for="">CVC</label>
+                        <input type="text" id="input3">
+                    </div>
+
+                </div>
+                <button id="btn1" onclick="addNewOrEdit(event)">SAVE</button>
+            </form>
+        </div>
+        <table border="1" cellpadding="20px" cellspacing="20px">
+            <thead>
+                <tr>
+                    <th>Card img</th>
+                    <th>Card number</th>
+                    <th>Expiry Date</th>
+                    <th>CVV</th>
+                    <th colspan="3">Action</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

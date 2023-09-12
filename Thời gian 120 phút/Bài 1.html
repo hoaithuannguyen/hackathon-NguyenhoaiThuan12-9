@@ -13,8 +13,8 @@
 <body>
 
     <script>
-        let input = prompt("Mời nhập các số (cách nhau bằng dấu phẩy):");
-        let numbers = input.split(",").map(num => parseInt(num.trim()));
+        let input = prompt("Mời nhập các số:");
+        let numbers = input.split(" ").map(num => parseInt(num.trim()));
         let bigNumber = findBigNumber(numbers);
 
         function findBigNumber(input) {
