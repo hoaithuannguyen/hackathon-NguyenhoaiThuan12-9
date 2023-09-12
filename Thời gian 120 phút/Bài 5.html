@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5</title>
+</head>
+
+<body>
+    <script>
+        let input = prompt("Nhập chuỗi:");
+        let reversed = reverse(input);
+        function reverse(input) {
+            let word = input.split(" ");
+            let reversed1 = word.map(word => word.split("").reverse().join(""));
+            let reversed2 = reversed1.join(" ");
+            return reversed2;
+        }
+        console.log("Chuỗi sau khi đảo ngược:", reversed);
+
+    </script>
+</body>
+
+</html>

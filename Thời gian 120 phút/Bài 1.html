@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+</head>
+<style>
+
+</style>
+
+<body>
+
+    <script>
+        let input = prompt("Mời nhập các số (cách nhau bằng dấu phẩy):");
+        let numbers = input.split(",").map(num => parseInt(num.trim()));
+        let bigNumber = findBigNumber(numbers);
+
+        function findBigNumber(input) {
+            let bigNumber = -1;
+            for (let i = 0; i < input.length; i++) {
+                let number = input[i];
+                if (number > bigNumber && input.indexOf(number) === input.lastIndexOf(number)) {
+                    bigNumber = number;
+                }
+            }
+            return bigNumber;
+        }
+        console.log("Số lớn nhất và duy nhất là số:", bigNumber);
+    </script>
+</body>
+
+</html>
